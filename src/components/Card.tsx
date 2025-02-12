@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import clsx from "clsx";
 
 interface CardProps {
   className?: string;
@@ -9,7 +10,10 @@ function Card(props: CardProps) {
   const { className, children } = props;
   return (
     <div
-      className={`inline-block min-w-[350px] w-auto min-h-2 p-4 rounded-lg border-2 border-gray-200 ${className}`}
+      className={clsx(
+        "inline-block min-w-[350px] w-auto min-h-2 p-4 rounded-lg border-2 border-gray-200",
+        className
+      )}
     >
       <div className="card-body">{children}</div>
     </div>
