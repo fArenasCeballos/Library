@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Card from "./components/Card";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return <Card></Card>;
 }
