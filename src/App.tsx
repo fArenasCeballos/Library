@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Card className="">
-        <Button>Hola Yeimy</Button>
+        <Button variant="outline-primary">Hola Mundo</Button>
       </Card>
     </>
   );

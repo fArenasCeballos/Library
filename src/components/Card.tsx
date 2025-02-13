@@ -11,11 +11,11 @@ function Card(props: CardProps) {
   return (
     <div
       className={clsx(
-        "inline-block min-w-[350px] w-auto min-h-2 p-4 rounded-lg border-2 border-gray-200",
+        "relative flex flex-col w-[350px] min-h-2 rounded-lg border-2 border-gray-200",
         className
       )}
     >
-      <div className="card-body">{children}</div>
+      <div className="card-body flex-auto p-4">{children}</div>
     </div>
   );
 }

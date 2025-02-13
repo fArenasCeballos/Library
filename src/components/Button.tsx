@@ -8,12 +8,24 @@ interface ButtonProps {
 }
 
 function Button(props: ButtonProps) {
-  const { className, variant = "primary", children } = props;
+  const { className, variant, children } = props;
 
   return (
     <button
       className={clsx(
-        `inline-block w-auto py-2 px-3 rounded-lg btn-${variant}`,
+        "inline-block w-auto btn-primary rounded-full py-2 px-4 text-center",
+        {
+          "btn-primary": variant === "primary",
+          "btn-secondary": variant === "secondary",
+          "btn-success": variant === "success",
+          "btn-warning": variant === "warning",
+          "btn-danger": variant === "danger",
+          "btn-outline-primary": variant === "outline-primary",
+          "btn-outline-secondary": variant === "outline-secondary",
+          "btn-outline-success": variant === "outline-success",
+          "btn-outline-warning": variant === "outline-warning",
+          "btn-outline-danger": variant === "outline-danger",
+        },
         className
       )}
     >
