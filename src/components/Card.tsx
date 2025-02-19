@@ -11,7 +11,7 @@ function Card(props: CardProps) {
   return (
     <div
       className={clsx(
-        "relative flex flex-col w-auto min-h-2 rounded-lg border-2 border-gray-200",
+        "relative flex flex-col w-auto min-h-2 rounded-lg ring-1 ring-gray-200",
         className
       )}
     >

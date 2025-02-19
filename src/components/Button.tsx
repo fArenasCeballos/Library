@@ -24,13 +24,12 @@ function Button({ className, variant = "primary", children }: ButtonProps) {
   return (
     <button
       className={clsx(
-        "inline-block w-auto btn-primary rounded-full py-2 px-4 text-center",
+        "inline-block w-auto rounded-lg py-2 px-4 text-center",
         variants[variant],
         className
       )}
     >
       {children}
-      <div className="card-body"></div>
     </button>
   );
 }

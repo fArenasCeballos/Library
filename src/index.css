@@ -38,36 +38,19 @@
   }
 
   /*************** ALERTS ***************/
-  .btn-primary {
-    @apply bg-blue-500 text-white hover:bg-blue-700 focus:outline-none;
+  .alert-primary {
+    @apply bg-blue-200 text-blue-900 ring-1 ring-blue-400;
   }
-  .btn-secondary {
-    @apply bg-gray-500 text-white hover:bg-gray-700 focus:outline-none;
+  .alert-secondary {
+    @apply bg-gray-200 text-gray-900 ring-1 ring-gray-300;
   }
-  .btn-success {
-    @apply bg-green-700 text-white hover:bg-green-800 focus:outline-none;
+  .alert-success {
+    @apply bg-emerald-100 text-emerald-900 ring-1 ring-emerald-300;
   }
-  .btn-warning {
-    @apply bg-amber-400 text-black hover:bg-yellow-400 focus:outline-none;
+  .alert-warning {
+    @apply bg-amber-100 text-amber-900 ring-1 ring-amber-200;
   }
-  .btn-danger {
-    @apply bg-red-600 text-white hover:bg-red-700 focus:outline-none;
-  }
-
-  /*************** ALERTS OUTLINES ***************/
-  .btn-outline-primary {
-    @apply bg-transparent text-blue-500 ring-1 ring-blue-500 hover:bg-blue-600 hover:text-white focus:outline-none;
-  }
-  .btn-outline-secondary {
-    @apply bg-transparent text-gray-500 ring-1 ring-gray-500 hover:bg-gray-500 hover:text-white focus:outline-none;
-  }
-  .btn-outline-success {
-    @apply bg-transparent text-green-700 ring-1 ring-green-700 hover:bg-green-700 hover:text-white focus:outline-none;
-  }
-  .btn-outline-warning {
-    @apply bg-transparent text-amber-400 ring-1 ring-amber-400 hover:bg-amber-400 hover:text-black focus:outline-none;
-  }
-  .btn-outline-danger {
-    @apply bg-transparent text-red-600 ring-1 ring-red-600 hover:bg-red-600 hover:text-white focus:outline-none;
+  .alert-danger {
+    @apply bg-red-100 text-red-900 ring-1 ring-red-300;
   }
 }
